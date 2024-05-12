@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Proj7-ContaBancaria</string>
+    <string name="poupanca">Conta Poupança</string>
+    <string name="especial">Conta Especial</string>
+    <string name="saque">Saque</string>
+    <string name="ValorSaque">Valor do Saque</string>
+    <string name="ValorDeposito">Valor do Deposito</string>
+    <string name="Deposito">Deposito</string>
+    <string name="dados">Dados</string>
+
+</resources>

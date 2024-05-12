@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgContaBnacaria"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/txtDeposito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDados">
+
+        <RadioButton
+            android:id="@+id/rbEspecial"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:text="@string/especial" />
+
+        <RadioButton
+            android:id="@+id/rbPoupanca"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="@string/poupanca" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtSaque"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/ValorSaque"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeposito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDeposito" />
+
+    <EditText
+        android:id="@+id/txtDeposito"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/ValorDeposito"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtSaque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgContaBnacaria" />
+
+    <Button
+        android:id="@+id/btnSaque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/saque"
+        app:layout_constraintBottom_toTopOf="@+id/txtSaida"
+        app:layout_constraintStart_toStartOf="@+id/btnDeposito"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeposito" />
+
+    <Button
+        android:id="@+id/btnDeposito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Deposito"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaque"
+        app:layout_constraintEnd_toEndOf="@+id/txtSaque"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaque" />
+
+    <TextView
+        android:id="@+id/txtSaida"
+        android:layout_width="62dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaque" />
+
+    <Button
+        android:id="@+id/btnDados"
+        android:layout_width="93dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/dados"
+        app:layout_constraintBottom_toTopOf="@+id/rgContaBnacaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toEndOf="@+id/txtDados"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDados"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/rgContaBnacaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
